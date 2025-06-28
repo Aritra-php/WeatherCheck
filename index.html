@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weathercheck</title>
+
+    <!--------Google fonts-------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!---------------------->
+
+    <!------Google icon link-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!----Google icon  link----->
+
+    <!----Link to stylesheet------->
+    <link rel="stylesheet" href="style.css">
+    <!--------------------------->
+
+</head>
+<body>
+    <main class="container">
+        <h2>Weathercheck.</h2>
+
+        <div class="search-bar">
+            <input id="city-input" type="text" placeholder="Enter your desired city">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="error-message" class="hidden"></div>
+
+        <section id="current-weather" class="weather-card hidden">
+
+            <h2 id="city-name"></h2>
+            
+            <br/>
+            <hr/>
+            <br/>
+
+            <div class="weather-item">
+                <span class="material-icons">thermostat</span>
+                <p><strong>Temperature:</strong><span id="current-temp"></span></p>
+            </div>
+                
+            <div class="weather-item">
+                <span class="material-icons">cloud</span>
+                <p><strong>Condition:</strong><span id="current-desc"></span></p>
+            </div>
+
+            <div class="weather-item">
+                <span class="material-icons">air</span>
+                <p><strong>Wind:</strong><span id="wind"></span></p>
+            </div>
+
+            <div class="weather-item">
+                <span class="material-icons">water_drop</span>
+                <p><strong>Humidity:</strong><span id="humidity"></span></p>
+            </div>
+
+            <div class="weather-item">
+                <span class="material-icons">wb_sunny</span>
+                <p><strong>Sunrise:</strong><span id="sunrise"></span></p>
+            </div>
+                
+                
+            <div class="weather-item">
+                <span class="material-icons">nights_stay</span>
+                 <p><strong>Sunset:</strong><span id="sunset"></span></p>
+            </div>
+                
+        </section>
+
+        <section id="forecast-weather" class="forecast-grid hidden"></section>
+        <section id="alerts-container" class="hidden"></section>
+
+    </main>
+
+    <!--------Connecting JS file------>
+    <script src="test.js"></script>
+    <!------------------------------->
+
+</body>
+</html>
